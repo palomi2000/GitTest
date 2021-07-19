@@ -274,4 +274,36 @@ $ cd GitTest
 user@DESKTOP-OL54O8F MINGW64 ~/GitTestLocal/GitTest (master)
 $ notepad Solution.txt
 
+user@DESKTOP-OL54O8F MINGW64 ~/GitTestLocal/GitTest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Solution.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-OL54O8F MINGW64 ~/GitTestLocal/GitTest (master)
+$ git add Solution.txt
+
+user@DESKTOP-OL54O8F MINGW64 ~/GitTestLocal/GitTest (master)
+$ git commit -m "Added Solution.txt"
+[master 9cb2fb1] Added Solution.txt
+ 1 file changed, 277 insertions(+)
+ create mode 100644 Solution.txt
+
+user@DESKTOP-OL54O8F MINGW64 ~/GitTestLocal/GitTest (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.55 KiB | 869.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/palomi2000/GitTest.git
+   5704a8e..9cb2fb1  master -> master
+
+
 
